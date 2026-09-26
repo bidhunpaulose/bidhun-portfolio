@@ -302,6 +302,7 @@ const ProfileCardComponent = ({
               loading="lazy"
               onError={(e) => {
                 const target = e.target;
+                target.onerror = null;
                 target.style.display = "none";
               }}
             />
@@ -315,6 +316,7 @@ const ProfileCardComponent = ({
                       loading="lazy"
                       onError={(e) => {
                         const target = e.target;
+                        target.onerror = null;
                         target.style.opacity = "0.5";
                         target.src = avatarUrl;
                       }}

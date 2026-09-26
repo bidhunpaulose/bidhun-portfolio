@@ -9,3 +9,12 @@
   transform: scale(1);
   transform-origin: center;
 }
+
+@media (max-width: 768px) {
+  .lanyard-wrapper {
+    width: 100%;
+    height: auto;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
